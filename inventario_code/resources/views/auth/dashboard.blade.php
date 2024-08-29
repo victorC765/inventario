@@ -11,7 +11,7 @@
 
 <body class="h-screen flex flex-col bg-black">
     <div id="app" class="flex flex-col h-full">
-        <header class="bg-orange-600 text-white p-4 flex justify-between">
+        <header class="bg-gradient-to-r from-indigo-500 via-pink-500 to-orange-500  text-white p-2 flex justify-between">
             <!-- Encabezado del Dashboard -->
             <div class="flex items-center">
                 <img width="60" height="60" src="https://img.icons8.com/plasticine/100/warehouse-1.png" alt="warehouse-1"/>
@@ -28,10 +28,10 @@
             <aside class="bg-neutral-900 text-white w-64 flex flex-col ">
                 <!-- Barra Lateral -->
                 <ul class="flex-grow">
-                    <li class="p-6 border border-gray-700 hover:bg-gray-700 w-full text-center text-gray-300"><a href="{{ route('home') }}">Dashboard</a></li>
-                    <li class="p-6 border border-gray-700 hover:bg-gray-700 w-full text-center text-gray-300"><a href="{{ route('products.index') }}">Productos</a></li>
-                    <li class="p-6 border border-gray-700 hover:bg-gray-700 w-full text-center text-gray-300    "><a href="{{ route('sales.index') }}">Ventas</a></li>
-                    <li class="p-6 border border-gray-700 hover:bg-gray-700 w-full text-center text-gray-300"><a href="{{ route('clients.index') }}">Clientes</a></li>
+                    <li class="p-6 border border-gray-700 hover:bg-indigo-600 w-full text-center text-gray-300"><a href="{{ route('home') }}">Dashboard</a></li>
+                    <li class="p-6 border border-gray-700 hover:bg-pink-600 w-full text-center text-gray-300"><a href="{{ route('products.index') }}">Productos</a></li>
+                    <li class="p-6 border border-gray-700 hover:bg-orange-500 w-full text-center text-gray-300    "><a href="{{ route('sales.index') }}">Ventas</a></li>
+                    <li class="p-6 border border-gray-700 hover:bg-red-500 w-full text-center text-gray-300"><a href="{{ route('clients.index') }}">Clientes</a></li>
                 </ul>
             </aside>
 
