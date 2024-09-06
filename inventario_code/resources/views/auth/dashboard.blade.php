@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dashboard</title>
+    <title>Sistema de Inventario</title>
+    <link rel="shortcut icon" href="https://img.icons8.com/plasticine/100/warehouse-1.png" />
     @vite(['resources/css/app.css', 'resources/js/app.js'])
     <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
 </head>
@@ -28,10 +29,18 @@
             <aside class="bg-neutral-900 text-white w-64 flex flex-col ">
                 <!-- Barra Lateral -->
                 <ul class="flex-grow">
-                    <li class="p-6 border border-gray-700 hover:bg-indigo-600 w-full text-center text-gray-300"><a href="{{ route('home') }}">Dashboard</a></li>
-                    <li class="p-6 border border-gray-700 hover:bg-pink-600 w-full text-center text-gray-300"><a href="{{ route('products.index') }}">Productos</a></li>
-                    <li class="p-6 border border-gray-700 hover:bg-orange-500 w-full text-center text-gray-300    "><a href="{{ route('sales.index') }}">Ventas</a></li>
-                    <li class="p-6 border border-gray-700 hover:bg-red-500 w-full text-center text-gray-300"><a href="{{ route('clients.index') }}">Clientes</a></li>
+                    <li class="p-6 border border-gray-700 hover:bg-indigo-600 w-full text-center text-gray-300 
+                    transition-all duration-500 focus:bg-indigo-600 focus:text-white hover:shadow-lg hover:shadow-indigo-500/40 active:opacity-[0.85]
+                     disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none hover:text-black"><a href="{{ route('home') }}" class="flex items-center justify-center">Dashboard</a></li>
+                    <li class="p-6 border border-gray-700 hover:bg-pink-600 w-full text-center text-gray-300
+                     transition-all duration-500  focus:bg-pink-600 focus:text-white hover:shadow-lg hover:shadow-pink-500/40
+                     active:opacity-[0.85] disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none  hover:text-black"><a href="{{ route('products.index') }}" class="flex items-center justify-center"><img width="32" height="32" src="https://img.icons8.com/color/48/package.png" alt="package"/>Productos</a></li>
+                    <li class="p-6 border border-gray-700 hover:bg-orange-500 w-full text-center text-gray-300
+                     transition-all duration-500 focus:bg-orange-500 focus:text-white hover:shadow-lg hover:shadow-orange-500/40 active:opacity-[0.85] disabled:pointer-events-none 
+                     disabled:opacity-50 disabled:shadow-none  hover:text-black"><a href="{{ route('sales.index') }}" class="flex items-center justify-center"><img width="32" height="32" src="https://img.icons8.com/color-glass/48/total-sales-1.png" alt="total-sales-1"/>Ventas</a></li>
+                    <li class="p-6 border border-gray-700 hover:bg-red-500 w-full text-center text-gray-300
+                     transition-all duration-500 focus:bg-red-500 focus:text-white hover:shadow-lg hover:shadow-red-500/40 active:opacity-[0.85] disabled:pointer-events-none
+                      disabled:opacity-50 disabled:shadow-none  hover:text-black"><a href="{{ route('clients.index') }}" class="flex items-center justify-center"><img width="32" height="32" src="https://img.icons8.com/color/48/crowd.png" alt="customer-1"/>Clientes</a></li>
                 </ul>
             </aside>
 

@@ -2,4 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer utilities {
+    .gradient-border {
+      @apply bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500; /* Gradiente de fondo */
+      mask-image: linear-gradient(black, black); /* Máscara para mostrar solo el borde */
+      -webkit-mask-composite: destination-out;
+      mask-composite: exclude;
+      content: '';
+    }
+  }
+
 @import url('https://fonts.googleapis.com/css2?family=Jersey+10&display=swap');

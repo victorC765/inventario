@@ -23,9 +23,9 @@ Route ::middleware('auth')->group(function(){
 Route::get('/clients', [ClientController::class, 'index'])->name('clients.index');
 //Productos rutas
 Route::get('/products', [ProductController::class, 'index'])->name('products.index');
-Route::post('/products/create', [ProductController::class, 'create'])->name('products.create');
+Route::post('/products/store', [ProductController::class, 'store'])->name('products.store');
 Route::post('/products/{id}', [ProductController::class, 'edit'])->name('products.edit');
-Route::delete('/products/{id}', [ProductController::class, 'destroy'])->name('products.destroy');
+Route::delete('/products/destroy/{id}', [ProductController::class, 'destroy'])->name('products.destroy');
 //Ventas rutas
 Route::get('/sales', [SaleController::class, 'index'])->name('sales.index');
 
